@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import profileImg from "@/public/profile.jpg"
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -18,9 +19,10 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
+      <section className="flex flex-col lg:flex-row">
+      <div className="lg:flex-1 justify-center lg:w-1/2">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -31,17 +33,17 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo"
-              width="192"
-              height="192"
+              src={profileImg}
+              width="400"
+              height="800"
               quality="95"
               priority={true}
               alt="Lyla's portrait"
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-300 w-200 rounded-full object-cover border-[0.25rem] border-white shadow-xl"
             />
           </motion.div>
 
-          <motion.span
+          {/*<motion.span
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -53,20 +55,19 @@ export default function Intro() {
             }}
           >
             👋
-          </motion.span>
+          </motion.span>*/}
         </div>
       </div>
-
+      <div className="lg:flex-1 lg:w-1/2">
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-xl font-normal !leading-[1.5] sm:text-4xl text-left"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-          <span className="font-bold">Hello, I'm Lyla.</span> I'm a{" "}
-          <span className="font-bold">full-stack developer</span> from{" "}
-          <span className="font-bold">a neuroscience</span> background. I enjoy
-          building <span className="italic">sites & apps</span>. My focus is{" "}
-          <span className="underline">React (Next.js)</span>
+          <span className="font-bold text-xl">Hello, I'm Lyla.</span><br></br>I'm a{" "}
+          <span className="font-bold">full-stack engineer</span> with a background in{" "} 
+          <span className="font-bold">neuroscience</span>. <br></br><br></br><span className="italic text-xl">I enjoy
+          building sites & apps.<br></br>My focus is React (Next.js).</span>
         </motion.h1>
 
         <motion.div
@@ -79,7 +80,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white text-sm px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-teal-100/30"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -90,7 +91,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white text-sm px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -100,7 +101,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="linkedin.com/in/lyla-taguma-0503361b0"
           target="_blank"
         >
           <BsLinkedin />
@@ -108,12 +109,14 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/lysts"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
       </motion.div>
+      </div>
+      </section>
     </section>
   );
 }

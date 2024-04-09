@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import nommablesHPImg from "@/public/nommableshp.png";
+import portfolioImg from "@/public/portfoliocode.png";
+import pelicanBlogImg from "@/public/pelicanblog.png";
 
 export const links = [
   {
@@ -35,52 +35,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full-Stack Development Bootcamp",
+    location: "London, UK",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I received a certification from Udemy. I am currently working on personal projects and looking for a full-time role with a focus on Front-end engineering.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Graduated with a BSc in Biomedical Sciences & Honours in Neuroscience from the University of Edinburgh",
+    location: "Edinburgh, UK",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "My interests in perceptual coherence led me to pursue neuroscience. I was introduced to programming as a result of building data analysis skills throughout the degree, in Python and R.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Undergraduate Neuroscience Researcher",
+    location: "Edinburgh, UK",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Self-taught Python to work on a data analysis pipeline in the Rochefort Lab at the Centre for Discovery Brain Sciences. My research was focused primarily on monitoring Hippocampal acivity in mice throughout their Oestrous cycle stages.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Nommables",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A recipe app for archiving recipes, developed in collaboration with a mentor. It offers useful features such as calculating cost per meal based off of your location settings. Currently in progress!",
+    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Langchain"],
+    imageUrl: nommablesHPImg,
   },
   {
-    title: "rmtDev",
+    title: "My Portfolio Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Deployed using Vercel, I used this opportunity of needing a dynamic website portfolio to learn Next.js and Tailwind CSS.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Vercel"],
+    imageUrl: portfolioImg,
   },
   {
-    title: "Word Analytics",
+    title: "Personal Blog",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A blog deployed using Pelican and GitHub Pages.",
+    tags: ["HTML", "CSS", "reStructuredText", "Pelican", "GitHub"],
+    imageUrl: pelicanBlogImg,
   },
 ] as const;
 
