@@ -39,7 +39,7 @@ export const experiencesData = [
     location: "London, UK",
     description:
       "I received a certification from Udemy. I am currently working on personal projects and looking for a full-time role with a focus on Front-end engineering.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(FaReact),
     date: "2024",
   },
   {
@@ -47,7 +47,7 @@ export const experiencesData = [
     location: "Edinburgh, UK",
     description:
       "My interests in perceptual coherence led me to pursue neuroscience. I was introduced to programming as a result of building data analysis skills throughout the degree, in Python and R.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
@@ -55,7 +55,7 @@ export const experiencesData = [
     location: "Edinburgh, UK",
     description:
       "Self-taught Python to work on a data analysis pipeline in the Rochefort Lab at the Centre for Discovery Brain Sciences. My research was focused primarily on monitoring Hippocampal acivity in mice throughout their Oestrous cycle stages.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
 ] as const;
@@ -64,8 +64,9 @@ export const projectsData = [
   {
     title: "Nommables",
     description:
-      "A recipe app for archiving recipes, developed in collaboration with a mentor. It offers useful features such as calculating cost per meal based off of your location settings. Currently in progress!",
+      "A minimalistic recipe app for archiving recipes. It can estimate cost per meal based off of your specified location. Coming soon...",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Langchain"],
+    link: "https://github.com/lysts/nommables",
     imageUrl: nommablesHPImg,
   },
   {
@@ -73,13 +74,15 @@ export const projectsData = [
     description:
       "Deployed using Vercel, I used this opportunity of needing a dynamic website portfolio to learn Next.js and Tailwind CSS.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Vercel"],
+    link: "https://lysts.vercel.app/",
     imageUrl: portfolioImg,
   },
   {
     title: "Personal Blog",
     description:
-      "A blog deployed using Pelican and GitHub Pages.",
+      "Deployed using Pelican & GitHub Pages. Follow my programming journey, other delights of life, and my growing knowledge garden...",
     tags: ["HTML", "CSS", "reStructuredText", "Pelican", "GitHub"],
+    link: "https://lysts.xyz/",
     imageUrl: pelicanBlogImg,
   },
 ] as const;
@@ -94,14 +97,11 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "PostgreSQL",
+  "SQL",
+  "R",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;

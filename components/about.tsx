@@ -19,28 +19,22 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Neuroscience</span>, I decided to pursue my
+        After graduating with a{" "}
+        <span className="font-medium">Neuroscience</span>{" "}degree, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        feeling of finally figuring out a solution to a problem. <br></br><br></br>My core tech-stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and PostgreSQL
-        </span>
-        . I am also familiar with TypeScript, Framer Motion, and Python. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
+          React, Next.js, Node.js, and PostgreSQL</span>{" "}as well as<span className="font-medium">{" "}TypeScript, Framer Motion, and Python.</span>{" "}I am always looking to
+        learn new technologies and am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing the violin and composing music, whittling and drawing, climbing, and going on extensive walks. I am driven by{" "}
-        <span className="font-medium">curiosity</span>. Currently, I am learning about{" "}
-        <span className="font-medium">crack-climbing</span>. I am also
-        learning fermentation techniques and needlework. 
+        <br></br><br></br>
+        <span className="italic">When I'm not coding</span>, I enjoy playing the violin and composing music, whittling and drawing, climbing, and going on extensive walks. I am currently learning about{" "}
+        <span className="font-medium">crack-climbing</span>, as well as  fermentation techniques, book-binding, and needlework. 
       </p>
     </motion.section>
   )

@@ -21,8 +21,8 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <section className="flex flex-col lg:flex-row">
-      <div className="lg:flex-1 justify-center lg:w-1/2">
+      <section className="flex flex-col lg:flex-row justify-center items-center">
+      <div className="lg:flex-1 lg:w-1/2">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -58,20 +58,26 @@ export default function Intro() {
           </motion.span>*/}
         </div>
       </div>
-      <div className="lg:flex-1 lg:w-1/2">
+      <div className="lg:flex-1 lg:w-1/2 justify-center items-center">
       <motion.h1
-        className="mb-10 mt-4 px-4 text-xl font-normal !leading-[1.5] sm:text-4xl text-left"
+        className="mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl lg:text-left"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
           <span className="font-bold text-xl">Hello, I'm Lyla.</span><br></br>I'm a{" "}
           <span className="font-bold">full-stack engineer</span> with a background in{" "} 
-          <span className="font-bold">neuroscience</span>. <br></br><br></br><span className="italic text-xl">I enjoy
-          building sites & apps.<br></br>My focus is React (Next.js).</span>
+          <span className="font-bold">neuroscience</span>
         </motion.h1>
+        <motion.p
+        className="mb-10 mt-2 px-4 text-xl font-normal !leading-[1.0] lg:text-left"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        >
+          <span className="italic text-xl !leading-[0.9]">I enjoy breathing life into websites & software solutions. My focus is React (Next.js).</span>
+        </motion.p>
 
         <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -86,7 +92,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Get in touch{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -95,7 +101,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
