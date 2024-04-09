@@ -66,7 +66,7 @@ export default function Intro() {
       >
           <span className="font-bold text-xl">Hello, I'm Lyla.</span><br></br>I'm a{" "}
           <span className="font-bold">full-stack engineer</span> with a background in{" "} 
-          <span className="font-bold">neuroscience</span>
+          <span className="font-bold">neuroscience.</span>
         </motion.h1>
         <motion.p
         className="mb-10 mt-2 px-4 text-xl font-normal !leading-[1.0] lg:text-left"
