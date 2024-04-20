@@ -39,7 +39,7 @@ export default function Intro() {
               quality="95"
               priority={true}
               alt="Lyla's portrait"
-              className="h-300 w-200 rounded-full object-cover border-[0.25rem] border-white shadow-xl"
+              className="h-300 w-200 rounded-full object-cover border-[0.4rem] border-white/20 shadow-xl"
             />
           </motion.div>
 
@@ -60,20 +60,20 @@ export default function Intro() {
       </div>
       <div className="lg:flex-1 lg:w-1/2 justify-center items-center">
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl lg:text-left"
+        className="mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl sm:text-right lg:text-left"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-          <span className="font-bold text-xl">Hello, I'm Lyla.</span><br></br>I'm a{" "}
-          <span className="font-bold">full-stack engineer</span> with a background in{" "} 
+          <span className="text-xl">Hi, I'm </span><span className="font-bold text-xl">Lyla,</span><br></br>a{" "}
+          <span className="font-bold">London-based designer </span>and <span className="font-bold"> software developer</span> with a background in{" "} 
           <span className="font-bold">neuroscience.</span>
         </motion.h1>
         <motion.p
-        className="mb-10 mt-2 px-4 text-xl font-normal !leading-[1.0] lg:text-left"
+        className="mb-10 mt-2 px-4 text-xl font-normal !leading-[1.0] lg:text-left sm:text-right"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         >
-          <span className="italic text-xl !leading-[0.9]">I enjoy breathing life into websites & software solutions. My focus is React (Next.js).</span>
+          <span className="italic text-xl !leading-[0.9]">I enjoy breathing life into innovative solutions.</span>
         </motion.p>
 
         <motion.div
