@@ -9,7 +9,7 @@ import pelicanBlogImg from "@/public/pelicanblog.png";
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "/",
   },
   {
     name: "About",
@@ -32,6 +32,31 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
+
+export const mainLinks = [
+  {
+    name: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    name: "Creative Projects",
+    path: "/projects",
+  },
+  {
+    name: "Research",
+    path: "/research",
+  },
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+] as const;
+
+export const descWords = ["human-centered", "iterative", "accessibility and inclusion in"] as const;
 
 export const experiencesData = [
   {
