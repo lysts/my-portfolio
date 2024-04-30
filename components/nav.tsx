@@ -35,7 +35,7 @@ function Navbar () {
                 <button className="menu">
                     { menuOpen ? <IoClose className="flex w-32px h-32px" onClick={() => setMenuOpen(!menuOpen)}/> : <IoMenu className="flex w-32px h-32px" onClick={() => setMenuOpen(!menuOpen)}/> }
                 </button>
-                <motion.ul className={"px-10 w-[22rem] justify-center gap-y-1 text-[0.9rem] font-medium text-charcoal sm:w-[initial] sm:flex-nowrap sm:gap-5 " + (menuOpen ? 'open' : '')}
+                <motion.ul className={"px-10 w-[22rem] justify-center gap-y-1 text-[0.9rem] font-medium text-charcoal dark:text-gray-300 sm:w-[initial] sm:flex-nowrap sm:gap-5 " + (menuOpen ? 'open' : '')}
                 > 
                         {mainLinks.map((link) => (
                             <motion.li
