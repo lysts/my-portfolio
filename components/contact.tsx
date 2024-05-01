@@ -29,7 +29,8 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Got an exciting idea? Contact me</SectionHeading>
+      <SectionHeading>Want to join forces? Let's talk.</SectionHeading>
+
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}

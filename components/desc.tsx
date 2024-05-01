@@ -28,9 +28,9 @@ export default function Desc() {
     >
       <div className="pb-20 px-8 flex">
         <div className="flex flex-grow"></div>
-        <h1 className="font-bold text-7xl">{descWords[currentWordIndex]} design.</h1>
+        <h1 className="font-bold text-6xl h-[20rem]">{descWords[currentWordIndex]} design.</h1>
       </div>
-      <div className="flex px-10">
+      <div className="flex px-10 pb-20">
       <p className="mb-3">
         London-based aspiring frontend engineer. My background sits at the intersection of {" "}
         <span className="font-medium">cognition and perceptual sciences, art and music,</span>{" "}and<span className="font-medium"> full-stack web development</span>.{" "}
