@@ -28,14 +28,14 @@ function Navbar () {
 
     return(
         <nav className="z-[999] relative pb-10 flex" id="mainNav" ref={ref}>
-                <Link href="/" className="header_logo flex px-10 h-3/4 py-2 font-bold text-3xl justify-start">
+                <Link href="/" className="header_logo flex px-10 h-3/4 py-2 font-bold text-3xl justify-start dark:text-white">
                     Lyla Taguma
                 </Link>
                 <div className="flex-grow"></div>
                 <button className="menu">
                     { menuOpen ? <IoClose className="flex w-32px h-32px" onClick={() => setMenuOpen(!menuOpen)}/> : <IoMenu className="flex w-32px h-32px" onClick={() => setMenuOpen(!menuOpen)}/> }
                 </button>
-                <motion.ul className={"px-10 w-[22rem] justify-center gap-y-1 text-[0.9rem] font-medium text-charcoal sm:w-[initial] sm:flex-nowrap sm:gap-5 " + (menuOpen ? 'open' : '')}
+                <motion.ul className={"px-10 w-[22rem] justify-center gap-y-1 text-[1rem] font-medium text-charcoal sm:w-[initial] sm:flex-nowrap sm:gap-5 " + (menuOpen ? 'open' : '')}
                 > 
                         {mainLinks.map((link) => (
                             <motion.li
@@ -46,7 +46,7 @@ function Navbar () {
                                 >
                                 <Link
                                     className=
-                                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 hover:overline transition dark:text-gray-400 dark:hover:text-gray-300"
+                                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 hover:overline transition dark:text-gray-200 dark:hover:text-gray-100"
                                     href={link.path}
                                 >
                                     {link.name}

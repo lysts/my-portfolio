@@ -11,8 +11,8 @@ import Header from"@/components/resume/iheader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lyla | Personal Portfolio",
-  description: "Lyla is a neuroscience-graduate full-stack developer.",
+  title: "Lyla | Portfolio",
+  description: "Lyla, a neuroscience-graduate full-stack developer and freelance artist.",
 };
 
 export default function RootLayout({

@@ -5,6 +5,18 @@ import { LuGraduationCap } from "react-icons/lu";
 import nommablesHPImg from "@/public/nommableshp.png";
 import portfolioImg from "@/public/portfoliocode.png";
 import pelicanBlogImg from "@/public/pelicanblog.png";
+import glassyEyeImg from "@/public/art/glassyeye.jpeg";
+import poemImg from "@/public/art/allsketch.jpeg";
+import dreamImg from "@/public/art/dreamhands.jpeg";
+import enaImg from "@/public/art/ena.jpeg";
+import ericImg from "@/public/art/ericcard.jpeg";
+import faustImg from "@/public/art/faust.jpeg";
+import cfaviconImg from "@/public/art/cfavicon.jpeg";
+import slaveImg from "@/public/art/oilpaint.jpg";
+import giftImg from "@/public/art/gift.png";
+import gamebgImg from "@/public/art/gamebg.png";
+import neonImg from "@/public/art/neonportrait.png";
+import cicadaImg from "@/public/art/cicada.png";
 
 export const links = [
   {
@@ -56,7 +68,7 @@ export const mainLinks = [
   },
 ] as const;
 
-export const descWords = ["human-centered", "iterative", "accessibility and inclusion in"] as const;
+export const descWords = ["human-centered", "iterative", "accessibility in", "inclusion in"] as const;
 
 export const experiencesData = [
   {
@@ -129,4 +141,92 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Framer Motion",
+] as const;
+
+
+export const artImages = [
+  {
+    title: "Dream Translations",
+    description:
+      "A recreation of a dream a colleague had using gold foil, pencil sketches, and a large canvas.",
+    tags: ["multimedia"],
+    imageUrl: dreamImg,
+  },
+  {
+    title: "Metroidvania Game",
+    description:
+      "Parallax background layers built in Procreate for a metroidvania game.",
+    tags: ["Procreate"],
+    imageUrl: gamebgImg,      
+  },
+  {
+    title: "Play on Colour",
+    description:
+      "A jazzy portrait bursting with bright neon tones and contemporary textures.",
+    tags: ["Procreate"],
+    imageUrl: neonImg,      
+  },
+  {
+    title: "Cicada",
+    description:
+      "A winter themed illustration of a Japanese cicada for a seasonal card.",
+    tags: ["Procreate"],
+    imageUrl: cicadaImg,      
+  },
+  {
+    title: "Realism in Digital Art",
+    description:
+      "A glassy-eyed experimentation of realistic textures that can be achieved within digital illustration.",
+    tags: ["Procreate"],
+    imageUrl: glassyEyeImg,
+  },
+  {
+    title: "A Gift",
+    description:
+      "Digital storytelling piece in Procreate.",
+    tags: ["Procreate"],
+    imageUrl: giftImg,      
+  },
+  {
+    title: "Unfree in Oil",
+    description:
+      "Oil painting of a bronze sculpture depicting a female slave.",
+    tags: ["Oil paint"],
+    imageUrl: slaveImg,      
+  },
+  {
+    title: "Elegie",
+    description:
+      "Stravinsky's 'Elegie', is a delight to play on the violin. It also draws out a very delicate textural landscape. This piece is a raw reflection of my experience of this meditative composition performed by Faust.",
+    tags: ["Procreate"],
+    imageUrl: faustImg, 
+  },
+  {
+    title: "Storytelling",
+    description:
+      "Pen drawings to accompany poetic shorts.",
+    tags: ["ballpoint pen"],
+    imageUrl: poemImg,
+  },
+  {
+    title: "Portrait Collage",
+    description:
+      "A multimedia portrait of Ena, a textile designer. Etching away parts of a complete portrait with a boxcutter was both terrifying and liberating, revealing avenues of exploration with washi and marbled paper as backdrops to fill the newfound spaces.",
+    tags: ["multimedia"],
+    imageUrl: enaImg, 
+  },
+  {
+    title: "Birthday Card",
+    description:
+      "Birthday Card designed using poster markers.",
+    tags: ["multimedia"],
+    imageUrl: ericImg, 
+  },
+  {
+    title: "Favicon",
+    description:
+      "Versions of a chamber orchestra's commissioned favicon.",
+    tags: ["Procreate"],
+    imageUrl: cfaviconImg, 
+  }, 
 ] as const;
