@@ -12,7 +12,7 @@ import enaImg from "@/public/art/ena.jpeg";
 import ericImg from "@/public/art/ericcard.jpeg";
 import faustImg from "@/public/art/faust.jpeg";
 import cfaviconImg from "@/public/art/cfavicon.jpeg";
-import slaveImg from "@/public/art/oilpaint.jpg";
+import slaveImg from "@/public/art/oilpaint.jpeg";
 import giftImg from "@/public/art/gift.png";
 import gamebgImg from "@/public/art/gamebg.png";
 import neonImg from "@/public/art/neonportrait.png";
