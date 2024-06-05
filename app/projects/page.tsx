@@ -6,7 +6,8 @@ import ArtCard from '@/components/artCard';
 import Modal from '@/components/modal';
 import { artImages } from "@/lib/data";
 import '@/app/artGallery.css';
-import { StaticImageData } from 'next/image'; // or your appropriate image data type import
+import { StaticImageData } from 'next/image'; 
+
 interface Art {
     title: string;
     description: string;
@@ -62,6 +63,7 @@ interface Art {
         <img key={key} src={creativeImages[key]} alt={key} />
       ))}
       </div>*/}
-         
-      export default ArtGallery;
+     
 
+      export default ArtGallery;
+      
