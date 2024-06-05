@@ -26,12 +26,12 @@ export default function Desc() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="pb-20 px-8 flex">
+      <div className="pt-5 pb-10 px-8 flex">
         <div className="flex flex-grow"></div>
-        <h1 className="font-bold text-6xl h-[10rem]">{descWords[currentWordIndex]} design.</h1>
+        <h1 className="font-bold sm:text-6xl text-5xl h-[10rem]">{descWords[currentWordIndex]} design.</h1>
       </div>
  
-      <div className="flex px-10 pb-20 flex-col lg:flex-row ">
+      <div className="flex px-10 pt-10 pb-10 flex-col lg:flex-row ">
         <div className="flex-1 pb-4">
       <Image
               src={artImg}
@@ -43,7 +43,7 @@ export default function Desc() {
               alt="Portfolio Art"
             />
          </div>   
-        <div className="flex-1">
+        <div className="flex-1 px-3">
         <p className="mb-3">
           London-based aspiring full-stack engineer. My background sits at the intersection of {" "}
           <span className="font-medium">cognition and perceptual sciences, art and music,</span>{" "}and<span className="font-medium"> full-stack web development</span>.{" "}

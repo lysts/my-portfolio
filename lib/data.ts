@@ -225,7 +225,7 @@ export const artImages = [
   {
     title: "Favicon",
     description:
-      "Versions of a chamber orchestra's commissioned favicon.",
+      "A commissioned favicon for a chamber orchestra's publicity website.",
     tags: ["Procreate"],
     imageUrl: cfaviconImg, 
   }, 
