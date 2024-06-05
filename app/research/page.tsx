@@ -19,7 +19,8 @@ export default function Home() {
         <div className="flex-col">
           <h1 className="left-align text-3xl sm:text-4xl md:text-5xl font-extrabold sm:pb-5 py-3">Does the Brain Ebb and Flow with our Hormonal Cycles?</h1>
           <h2 className="text-base md:text-md font-bold">Project Title</h2> 
-          <p className="left-align italic text-base md:text-md pb-2">Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity</p>
+          <p className="left-align italic text-base md:text-md pb-2">
+「 Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity 」</p>
         </div>
         <div className="flex flex-col">
           <h2 className="text-sm sm:text-base md:text-md font-bold">Project Type</h2> 
