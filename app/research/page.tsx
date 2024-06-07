@@ -36,7 +36,7 @@ export default function Home() {
     </div>
     <section className="abstract py-5 max-w-7xl" style={sectionStyle}>
         <div className="text-white py-10 md:px-20 bg-black/[0.4]"> {/* Adjust padding for responsive design */}
-          <p><span className="text-lg md:text-xl">Plato believed that pre-menstrual distress that those assigned female at birth (AFAB) often experience was caused by the “mourning womb”.</span> 
+          <p><span className="text-lg md:text-2xl">Plato believed that pre-menstrual distress that those assigned female at birth (AFAB) often experience was caused by the “mourning womb”.</span> 
           <br/>
           <br/>
           <span className="text-base md:text-xl">Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours.</span> 

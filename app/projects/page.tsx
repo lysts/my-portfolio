@@ -1,7 +1,7 @@
 "use client"
 
-import Desc from "@/components/desc";
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import ArtCard from '@/components/artCard';
 import Modal from '@/components/modal';
 import { artImages } from "@/lib/data";
@@ -28,18 +28,41 @@ interface Art {
   
     return (
       <main>
-      <h1 className="px-6 text-2xl md:text-3xl flex flex-col"><span className="text-5xl md:text-6xl font-extrabold">Explorations in </span> <span>art, sound, wood, and technology.</span></h1>
-      <div className="art-gallery">
-        <div className="grid">
+      <h1 className="px-10 py-5 md:px-20 text-2xl md:text-3xl flex flex-col"><span className="text-5xl md:text-6xl font-extrabold">Explorations in </span> <span>art, sound, wood, and technology.</span></h1>
+      <div className="art-gallery px-5 md:px-10">
+        <motion.div 
+          className="grid"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+              y: 20,
+            },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
           {artImages.map((art, index) => (
+            <motion.div key={index} variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0}
+            }}>
             <ArtCard
               key={index}
               title={art.title}
               imageUrl={art.imageUrl} // Adjust path as needed
               onClick={() => handleCardClick(art)} // Handle the card click
             />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
         {selectedArt && (
           <Modal
             isOpen={!!selectedArt}
