@@ -5,7 +5,7 @@ import GiorgioImg from "@/public/GiorgioVasariAllegoryofJusticeandTruth.jpg";
 
 var sectionStyle = {
   width: "100%",
-  height: "auto",
+  height: "80vh",
   backgroundImage: `url(${GiorgioImg.src})`, // Use .src to get the URL of the imported image
   backgroundSize: 'cover', // Optional: cover the entire area
   backgroundPosition: 'center' // Optional: center the image
@@ -14,39 +14,45 @@ var sectionStyle = {
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-    <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] w-[90vw] max-w-5xl px-4 py-15 md:px-10 pt-10"> {/* Adjust the max-width to control the width of rContent */}
-      <div className="flex flex-col sm:flex-row sm:gap-20 pb-10">
-        <div className="flex-col">
-          <h1 className="left-align text-3xl sm:text-4xl md:text-5xl font-extrabold sm:pb-5 py-3">Does the Brain Ebb and Flow with our Hormonal Cycles?</h1>
-          <h2 className="text-base md:text-md font-bold">Project Title</h2> 
-          <p className="left-align italic text-base md:text-md pb-2">
-「 Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity 」</p>
+      {/*Title*/}
+    <section className="researchTitle py-5 max-w-7xl" style={sectionStyle}>
+        <div className="text-white py-10 px-10 md:px-20 bg-black/[0.4] max-w-[70vw]"> {/* Adjust padding for responsive design */}
+        <h1 className="left-align text-2xl sm:text-3xl md:text-4xl font-extrabold sm:pb-5 py-3 max-w-[60vw]">Does the Brain Ebb and Flow with our Hormonal Cycles?</h1>
+
         </div>
-        <div className="flex flex-col">
-          <h2 className="text-sm sm:text-base md:text-md font-bold">Project Type</h2> 
-          <div className="text-sm sm:text-base md:text-md">Clinical Laboratory Project</div>
-          <h2 className="text-sm sm:text-base md:text-md font-bold sm:pt-4 pt-2">Tags</h2> 
-          <div className="mt-2 flex flex-wrap gap-2"> {/* Added tags section */}
+    </section>
+    <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] w-[90vw] max-w-6xl px-4 py-15 md:px-10 pt-10"> {/*edit max width?*/}
+      <div className="flex flex-col sm:flex-row sm:gap-5 md:gap-10 pb-10">
+        {/*left column desc*/}
+      <div className="flex flex-col px-5 md:px-2">
+          <h2 className="text-sm sm:text-base md:text-base font-bold pb-1">Project Type</h2> 
+          <div className="text-sm sm:text-base md:text-base pb-3 sm:pb-1">Clinical Laboratory Project</div>
+          <h2 className="text-sm sm:text-base md:text-base font-bold sm:pt-4 md:pt-3 pt-2">Tags</h2> 
+          <div className="mt-2 pb-5 flex flex-wrap gap-2"> {/* Added tags section */}
             <span className="bg-black/[0.1] dark:bg-black/[0.6] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white/[0.7]">neuroscience</span>
             <span className="bg-black/[0.1] dark:bg-black/[0.6] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white/[0.7]">brain</span>
             <span className="bg-black/[0.1] dark:bg-black/[0.6] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white/[0.7]">health</span>
           </div>
+          <h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-0">Project Title</h2> 
+          <p className="left-align italic text-sm sm:text-base md:text-base  pb-3">
+"Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity"</p>
+        </div>
+        {/*right column desc: intro*/}
+        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1">
+        <h2 className="text-base md:text-md font-bold pb-2">Introduction</h2>
+        <p><span className="text-base md:text-lg">Plato believed that pre-menstrual distress experienced by those assigned female at birth (AFAB) was caused by the “mourning womb”.</span> 
+          <br/>
+          <br/>
+          <span className="text-base md:text-lg">Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours.</span> 
+          <br/>
+          <br/>
+          <span className="italic text-base md:text-lg">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span></p>
+          <br />
+          <p className="text-base md:text-lg">There is a large knowledge gap regarding how these cycles may affect neuronal mechanisms and activity that underlie information processing in the brain.</p>
         </div>
       </div>
     </div>
-    <section className="abstract py-5 max-w-7xl" style={sectionStyle}>
-        <div className="text-white py-10 md:px-20 bg-black/[0.4]"> {/* Adjust padding for responsive design */}
-          <p><span className="text-lg md:text-2xl">Plato believed that pre-menstrual distress that those assigned female at birth (AFAB) often experience was caused by the “mourning womb”.</span> 
-          <br/>
-          <br/>
-          <span className="text-base md:text-xl">Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours.</span> 
-          <br/>
-          <br/>
-          <span className="bg-black/[0.7] md:text-xl">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span></p>
-          <br />
-          <p className="text-base md:text-xl">There is a large knowledge gap regarding how these cycles may affect neuronal mechanisms and activity that underlie information processing in the brain.</p>
-        </div>
-      </section>
+
       <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] max-w-5xl px-4 py-15 md:px-10 py-10">
       <p></p>
       </div>
