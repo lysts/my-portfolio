@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageUrl, descrip
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content dark:bg-black" onClick={(e)=> e.stopPropagation()}>
-        <span className="modal-close pt-2 pr-3" onClick={onClose}>&times;</span>
+        <span className="modal-close" onClick={onClose}>&times;</span>
         {typeof imageUrl === 'string' ? (
           <img src={imageUrl} alt={title} />
         ) : (

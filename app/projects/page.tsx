@@ -28,8 +28,8 @@ interface Art {
   
     return (
       <main>
-      <h1 className="px-10 pb-10 artdesc">Explorations in art, sound, and wood.</h1>
-      <div className="art-gallery py-10 px-5">
+      <h1 className="px-6 text-2xl md:text-3xl flex flex-col"><span className="text-5xl md:text-6xl font-extrabold">Explorations in </span> <span>art, sound, wood, and technology.</span></h1>
+      <div className="art-gallery">
         <div className="grid">
           {artImages.map((art, index) => (
             <ArtCard

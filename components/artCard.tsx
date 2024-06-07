@@ -16,7 +16,7 @@ const ArtCard: React.FC<ArtCardProps> = ({ title, imageUrl, onClick }) => {
       ) : (
         <Image className="object-contain" src={imageUrl} alt={title} />
       )}
-      <h2 className="text-xl italic p-2">{title}</h2>
+      <h2>{title}</h2>
     </div>
   );
 };
