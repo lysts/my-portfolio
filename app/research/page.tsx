@@ -34,27 +34,40 @@ export default function Home() {
             <span className="bg-black/[0.1] dark:bg-black/[0.6] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white/[0.7]">health</span>
           </div>
           <h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-0">Project Title</h2> 
-          <p className="left-align italic text-sm sm:text-base md:text-base  pb-3">
+          <p className="left-align italic text-sm sm:text-base md:text-base  pb-4">
 "Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity"</p>
+<h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-0">Data Acquisition</h2> 
+          <p className="left-align italic text-sm sm:text-base md:text-base  pb-3">
+Chronic brain activity recordings using Neuropixels probes in the visual cortex and hippocampus. Cycle stage monitorying using vaginal cell swab samples.</p>
+          <div className="flex-1"></div>
+          <div className="py-4">
+          <button className="bg-slate-500 hover:bg-slate-700 dark:bg-white/[0.6] dark:hover:bg-white/[0.9] text-white dark:text-white py-2 px-4 rounded-sm max-w-[48%]" href="">Read Thesis</button>
+          </div>
         </div>
         {/*right column desc: intro*/}
-        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1">
-        <h2 className="text-base md:text-md font-bold pb-2">Introduction</h2>
-        <p><span className="text-base md:text-lg">Plato believed that pre-menstrual distress experienced by those assigned female at birth (AFAB) was caused by the “mourning womb”.</span> 
+        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1 w-[100%]">
+        <h2 className="text-base md:text-md font-bold pb-2">An Overview</h2>
+        <p>Plato believed that pre-menstrual distress experienced by those assigned female at birth (AFAB) was caused by the “mourning womb”.
           <br/>
           <br/>
-          <span className="text-base md:text-lg">Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours.</span> 
+          Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours. 
           <br/>
           <br/>
-          <span className="italic text-base md:text-lg">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span></p>
-          <br />
-          <p className="text-base md:text-lg">There is a large knowledge gap regarding how these cycles may affect neuronal mechanisms and activity that underlie information processing in the brain.</p>
+          <span className="italic text-base md:text-lg">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span>
+          <br/>
+          <br/>
+          There is a large knowledge gap regarding how these cycles may affect neuronal mechanisms and activity that underlie information processing in the brain. In this study, we presented visual stimuli to female mice and assessed how neuronal activity in the brain related to oestrous cycle stages. 
+          <br/>
+          <br/>
+          There were no oestrous cycle-dependent changes in brain activity. Differences in brain activity were primarily due to individual variability. Such findings motivate scientists to question if the oestrous cycle impacts brain activity in specific behavioural contexts. It also encourages future studies to include females in research, whilst accounting for mouse-to-mouse variability and what aspects of individuality may be giving rise to such differences in brain activity.</p> 
         </div>
       </div>
     </div>
 
-      <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] max-w-5xl px-4 py-15 md:px-10 py-10">
-      <p></p>
+      <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] max-w-5xl px-4 py-30 md:px-10">
+        <div>
+        
+        </div>
       </div>
   </main>
 );
