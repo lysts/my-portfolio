@@ -2,6 +2,7 @@ import Desc from "@/components/desc";
 import Contact from "@/components/contact";
 import Image from "next/image";
 import GiorgioImg from "@/public/GiorgioVasariAllegoryofJusticeandTruth.jpg";
+import { HiDownload } from "react-icons/hi";
 
 var sectionStyle = {
   width: "100%",
@@ -21,7 +22,7 @@ export default function Home() {
 
         </div>
     </section>
-    <div className="researchContent bg-white/[0.6] dark:bg-black/[0.6] w-[90vw] max-w-6xl px-4 py-15 md:px-10 pt-10"> {/*edit max width?*/}
+    <div className="researchContent bg-gray-50 dark:bg-black/[0.6] w-[90vw] max-w-6xl px-4 py-15 md:px-10 pt-10"> {/*edit max width?*/}
       <div className="flex flex-col sm:flex-row sm:gap-5 md:gap-10 pb-10">
         {/*left column desc*/}
       <div className="flex flex-col px-5 md:px-2">
@@ -36,16 +37,22 @@ export default function Home() {
           <h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-0">Project Title</h2> 
           <p className="left-align italic text-sm sm:text-base md:text-base  pb-4">
 "Oestrous Cycle-Dependent Modulation of Cortical & Hippocampal Neuronal Activity"</p>
-<h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-0">Data Acquisition</h2> 
-          <p className="left-align italic text-sm sm:text-base md:text-base  pb-3">
-Chronic brain activity recordings using Neuropixels probes in the visual cortex and hippocampus. Cycle stage monitorying using vaginal cell swab samples.</p>
+<h2 className="text-sm sm:text-base md:text-base font-bold pb-1 pt-2 md:pt-3">Data Acquisition</h2> 
+          <p className="left-align text-sm sm:text-base md:text-base  pb-3">
+Brain activity recorded using chronic Neuropixels probe implants in the visual cortex and hippocampus of female mouse models. Monitored cycle stages using vaginal cell sample histologies.</p>
           <div className="flex-1"></div>
           <div className="py-4">
-          <button className="bg-slate-500 hover:bg-slate-700 dark:bg-white/[0.6] dark:hover:bg-white/[0.9] text-white dark:text-white py-2 px-4 rounded-sm max-w-[48%]" href="">Read Thesis</button>
+          <a
+          className="bg-slate-500 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-500 text-white text-center dark:text-white py-2 px-4 rounded-sm md:max-w-[40%] lg:max-w-[38%] text-sm items-center outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+          href="/thesis.pdf"
+          download
+        >
+          Read Thesis
+        </a>
           </div>
         </div>
         {/*right column desc: intro*/}
-        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1 w-[100%]">
+        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1 w-[100%] sm:w-[200%]">
         <h2 className="text-base md:text-md font-bold pb-2">An Overview</h2>
         <p>Plato believed that pre-menstrual distress experienced by those assigned female at birth (AFAB) was caused by the “mourning womb”.
           <br/>
@@ -53,7 +60,7 @@ Chronic brain activity recordings using Neuropixels probes in the visual cortex 
           Historically, case studies have reported monthly occurring symptoms in females such as intensified seizures in epileptic patients. Similarly, reproductive cycles in females from other mammalian species, such as mice and their oestrous cycle, have been found to induce changes in appetite and sociosexual behaviours. 
           <br/>
           <br/>
-          <span className="italic text-base md:text-lg">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span>
+          <span className="italic">Unfortunately, such variability in behaviour and cognitive function has become a reason to <span className="font-bold">exclude females from neuroscience research.</span></span>
           <br/>
           <br/>
           There is a large knowledge gap regarding how these cycles may affect neuronal mechanisms and activity that underlie information processing in the brain. In this study, we presented visual stimuli to female mice and assessed how neuronal activity in the brain related to oestrous cycle stages. 
