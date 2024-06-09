@@ -6,7 +6,7 @@ import { HiDownload } from "react-icons/hi";
 
 var sectionStyle = {
   width: "100%",
-  height: "80vh",
+  height: "auto", //set 80vh for larger height
   backgroundImage: `url(${GiorgioImg.src})`, // Use .src to get the URL of the imported image
   backgroundSize: 'cover', // Optional: cover the entire area
   backgroundPosition: 'center' // Optional: center the image
@@ -52,7 +52,7 @@ Brain activity recorded using chronic Neuropixels probe implants in the visual c
           </div>
         </div>
         {/*right column desc: intro*/}
-        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1 w-[100%] sm:w-[200%]">
+        <div className="flex-col px-5 pt-4 sm:pt-0 md:px-1 w-[100%] sm:w-[250%]">
         <h2 className="text-base md:text-md font-bold pb-2">An Overview</h2>
         <p>Plato believed that pre-menstrual distress experienced by those assigned female at birth (AFAB) was caused by the “mourning womb”.
           <br/>
