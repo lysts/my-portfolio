@@ -18,7 +18,8 @@ export default function Home() {
       {/*Title*/}
     <section className="researchTitle py-5 max-w-7xl" style={sectionStyle}>
         <div className="text-white py-10 px-10 md:px-20 bg-black/[0.4] max-w-[70vw]"> {/* Adjust padding for responsive design */}
-        <h1 className="left-align text-2xl sm:text-3xl md:text-4xl font-extrabold sm:pb-5 py-3 max-w-[60vw]">Does the Brain Ebb and Flow with our Hormonal Cycles?</h1>
+        <h1 className="left-align text-2xl sm:text-3xl md:text-4xl font-extrabold pt-3 max-w-[60vw]">Does the Brain Ebb and Flow with our Hormonal Cycles?</h1>
+        <p className="left-align text-sm sm:text-md md:text-lg sm:pb-5 py-3 max-w-[40vw]">A research project striving to understand the interaction between hormonal cycles and cognitive function in female physiology.</p>
 
         </div>
     </section>
@@ -43,7 +44,7 @@ Brain activity recorded using chronic Neuropixels probe implants in the visual c
           <div className="flex-1"></div>
           <div className="py-4">
           <a
-          className="bg-slate-500 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-500 text-white text-center dark:text-white py-2 px-4 rounded-sm md:max-w-[40%] lg:max-w-[38%] text-sm items-center outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+          className="bg-slate-500 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-500 text-white text-center dark:text-white py-2 px-4 rounded-full md:max-w-[40%] lg:max-w-[38%] text-md items-center outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           href="/thesis.pdf"
           download
         >

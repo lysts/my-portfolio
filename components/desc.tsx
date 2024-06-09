@@ -13,7 +13,7 @@ export default function Desc() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % descWords.length);
-    }, 3000);
+    }, 3500);
 
     return () => clearInterval(intervalId);
   }, []); // Run once on component mount

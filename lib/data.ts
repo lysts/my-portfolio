@@ -68,7 +68,7 @@ export const mainLinks = [
   },
 ] as const;
 
-export const descWords = ["human-centered", "iterative", "accessibility in", "inclusion in"] as const;
+export const descWords = ["human-centered", "iterative", "accessible", "inclusive"] as const;
 
 export const experiencesData = [
   {
