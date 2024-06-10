@@ -1,3 +1,4 @@
+import React from "react";
 import Desc from "@/components/desc";
 import Contact from "@/components/contact";
 import Image from "next/image";
