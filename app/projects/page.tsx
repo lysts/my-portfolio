@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ArtCard from '@/components/artCard';
-import Modal from '@/components/modal';
+import ArtCard from '@/components/gallery/artCard';
+import Modal from '@/components/gallery/modal';
 import { artImages } from "@/lib/data";
 import '@/app/projects/artGallery.css';
 import { StaticImageData } from 'next/image'; 
