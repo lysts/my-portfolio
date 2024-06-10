@@ -47,7 +47,7 @@ export default function Desc() {
         <p className="mb-3">
           London-based aspiring full-stack engineer. My background sits at the intersection of {" "}
           <span className="font-medium">cognition and perceptual sciences, art and music,</span>{" "}and<span className="font-medium"> full-stack web development</span>.{" "}
-          <span className="italic">Passionate about pushing boundaries to create innovative designs and software solutions.</span> My designs prioritise <span className="underline">impact</span> through functionality and artistry.
+          My designs prioritise <span className="underline">impact</span> through functionality and artistry.
           
           <br></br><br></br>
           <span className="italic">When I'm not coding</span>, I enjoy crafting experiences that are degustated, musical, or visual, wood carving and pyrography, or climbing and going on extensive walks. I am currently learning about fermentation techniques, book-binding, and needlework. 
