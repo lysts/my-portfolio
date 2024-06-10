@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import ArtCard from '@/components/artCard';
 import Modal from '@/components/modal';
 import { artImages } from "@/lib/data";
-import '@/app/artGallery.css';
+import '@/app/projects/artGallery.css';
 import { StaticImageData } from 'next/image'; 
 
 interface Art {

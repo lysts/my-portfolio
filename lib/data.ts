@@ -55,8 +55,8 @@ export const mainLinks = [
     path: "/projects",
   },
   {
-    name: "Research",
-    path: "/research",
+    name: "Thesis",
+    path: "/thesis",
   },
   {
     name: "About",

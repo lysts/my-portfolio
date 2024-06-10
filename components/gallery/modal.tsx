@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image'; // or your preferred image handling library
-import '@/app/modal.css'
+import '@/app/projects/modal.css'
 
 interface ModalProps {
   isOpen: boolean;

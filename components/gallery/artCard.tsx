@@ -1,6 +1,6 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image'; // or your preferred image handling library
-import '@/app/artCard.css'
+import '@/app/projects/artCard.css'
 import {motion} from 'framer-motion';
 
 interface ArtCardProps {
